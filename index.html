@@ -1,10 +1,510 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Project</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Citodex</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Slick Slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+   <link rel="stylesheet" href="/assets/css/style.css">
+
 </head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg px-3">
+        <div class="container d-flex align-items-center gap-3">
+    
+            <!-- Hamburger -->
+            <button class="hamburger-btn d-lg-none d-flex flex-column align-items-center justify-content-center gap-1"
+                type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                <span style="width:9.17px;"></span>
+                <span style="width:14.67px;"></span>
+                <span style="width:9.17px;"></span>
+            </button>
+    
+            <!-- Logo -->
+            <a class="navbar-brand mb-0" href="#">
+                <img src="assets/images/png/logo.png" />
+            </a>
+    
+            <!-- Nav Links desktop -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav gap-1">
+                    <li class="nav-item"><a class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a class="nav-link">About</a></li>
+                    <li class="nav-item"><a class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+    
+            <!-- Demo Button desktop -->
+            <div class="d-none d-lg-block ms-auto">
+                <button class="btn-demo">Request A Demo</button>
+            </div>
+    
+        </div>
+    </nav>
+    
+    <!-- OFFCANVAS -->
+    <div class="offcanvas offcanvas-start d-flex flex-column" id="mobileMenu" tabindex="-1">
+    
+        <!-- Header -->
+        <div class="offcanvas-header d-flex align-items-center gap-3 pb-3 px-4 pt-4">
+            <button class="close-btn d-flex align-items-center justify-content-center" data-bs-dismiss="offcanvas">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                    <path d="M1 1L13 13M13 1L1 13" stroke="var(--text-black)" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </button>
+            <a href="/" data-bs-dismiss="offcanvas">
+                <img class="nav-brand-sm" src="assets/images/png/logo.png" alt="Citodex"
+                    style="height:36px; object-fit:contain;" />
+            </a>
+        </div>
+    
+        <!-- Divider -->
+        <div class="d-flex justify-content-center mt-3">
+            <span class="offcanvas-divider d-block"></span>
+        </div>
+    
+        <!-- Nav Links -->
+        <div class="offcanvas-body d-flex flex-column px-4 pt-4">
+            <nav class="d-flex flex-column gap-5">
+                <a href="#" class="offcanvas-nav-link-active">Home</a>
+                <a href="#" class="offcanvas-nav-link-muted">About</a>
+                <a href="#" class="offcanvas-nav-link-muted">Contact</a>
+            </nav>
+    
+            <div class="flex-grow-1"></div>
+    
+            <div class="d-flex justify-content-center pb-4">
+                <button class="btn-demo-sm" style="width:55%;">Request A Demo</button>
+            </div>
+        </div>
+    
+    </div>
+    
+    <!-- HERO -->
+    <main>
+        <div class="main">
+            <div class="main1stChild">
+                <h1>Specialty Insurance with AI Precision</h1>
+                <p>At Citodex, we harness the power of AI to redefine efficiency for brokers and insurers,
+                    eliminating antiquated manual processes and enabling seamless, precise data integration
+                    with unprecedented speed.</p>
+                <button class="btn-hero">Request a Demo</button>
+            </div>
+    
+            <div class="hero-slider-wrap">
+                <div class="hero-slides" id="heroSlides">
+                    <div class="hero-slide"><img src="assets/images/png/Citodex-chat.png" alt=""></div>
+                    <div class="hero-slide"><img src="assets/images/png/Citodex-chat.png" alt=""></div>
+                    <div class="hero-slide"><img src="assets/images/png/Citodex-chat.png" alt=""></div>
+                    <div class="hero-slide"><img src="assets/images/png/Citodex-chat.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- - - - - = = = = = choose section = = = = = - - - - -->
+
+
+    <section class="why-section">
+        <div class="container2 choose-section text-center">
+            <h2 class="pt-custom">WHY CHOOSE CITODEX</h2>
+            <p class="choose-dis">
+                Our objective is to become the epitome of professionalism and
+                reliability in the specialty insurance sector, empowering our partners
+                to elevate their focus from administrative burdens to strategic
+                innovation.
+            </p>
+            <div class="row g-custom cards"></div>
+        </div>
+    </section>
+
+
+
+
+    <!--  - - - - = = = = = advance section  = = = = = - - - - -->
+
+
+
+<div class="my-160-custom my-40-custom">
+    <div class="custom-container  ">
+        <div class="d-flex justify-content-between flex-xl-nowrap  flex-wrap flex-row ">
+            <div
+                class="mt-40 mb-30 d-flex flex-column align-items-center align-items-xl-start text-center text-xl-start ">
+                <h3 class="main-heading-advantage text-uppercase mb-0">The Citodex Advantage</h3>
+                <p class="para-style fw-normal mb-0">Citodex isn't just another tool; it's your strategic partner in
+                    navigating the complexities of specialty insurance with
+                    AI-driven clarity and speed. We empower you to.</p>
+                <button class="explore-btn border-1 fw-bold text-capitalize">Explore the Platform</button>
+            </div>
+
+
+            <div class="d-flex flex-column  justify-content-between max-height h-100 gap-sm-row-20 ">
+                <div class="position-relative group max-w-864">
+                    <div class="card-custom   position-relative">
+                        <div class="d-flex flex-sm-row flex-column  w-full">
+                            <span class="icons"><svg width="42" height="42" viewBox="0 0 42 42" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M25.2525 10.3774L35.875 20.9999L25.2525 31.6224" stroke="white"
+                                        stroke-width="2.2" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M6.12514 21H35.5776" stroke="white" stroke-width="2.2"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                            <div class="d-flex flex-column gap-18">
+                                <h5 class="heading-advantage text-capitalize fw-semibold mb-0">Accelerate Placement
+                                    Cycles
+                                </h5>
+                                <p class="para-2-style fw-normal mb-0">Drastically reduce the time from submission to
+                                    quote
+                                    by leveraging AI for instant data structuring, market analysis, and
+                                    streamlined communication.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position-absolute bottom-underline w-100 "></div>
+                </div>
+
+
+                <div class="position-relative group">
+                    <div class="card-custom position-relative">
+                        <div class="d-flex flex-sm-row flex-column w-full">
+                            <span class="icons"><svg width="42" height="42" viewBox="0 0 42 42" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M27.2649 20.9999C27.2649 24.4649 24.4649 27.2649 20.9999 27.2649C17.5349 27.2649 14.7349 24.4649 14.7349 20.9999C14.7349 17.5349 17.5349 14.7349 20.9999 14.7349C24.4649 14.7349 27.2649 17.5349 27.2649 20.9999Z"
+                                        stroke="white" stroke-width="2.2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M21.0002 35.4728C27.1777 35.4728 32.9352 31.8328 36.9427 25.5328C38.5177 23.0653 38.5177 18.9178 36.9427 16.4503C32.9352 10.1503 27.1777 6.51025 21.0002 6.51025C14.8227 6.51025 9.06521 10.1503 5.05771 16.4503C3.48271 18.9178 3.48271 23.0653 5.05771 25.5328C9.06521 31.8328 14.8227 35.4728 21.0002 35.4728Z"
+                                        stroke="white" stroke-width="2.2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                            <div class="d-flex flex-column gap-18">
+                                <h5 class="heading-advantage text-capitalize fw-semibold mb-0">Enhance Market Access
+                                </h5>
+                                <p class="para-2-style fw-normal mb-0">Gain unparalleled visibility into carrier
+                                    appetites
+                                    and connect with the optimal markets for every risk, effortlessly
+                                    expanding your placement capabilities.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position-absolute bottom-underline w-100 "></div>
+                </div>
+
+
+
+                <div class="position-relative group">
+                    <div class="card-custom position-relative">
+                        <div class="d-flex flex-sm-row flex-column w-full">
+                            <span class="icons"><svg width="42" height="42" viewBox="0 0 42 42" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.5 33.25L22.75 33.25" stroke="white" stroke-width="2.2"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M29.75 33.25L38.5 33.25" stroke="white" stroke-width="2.2"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M3.5 21L12.25 21" stroke="white" stroke-width="2.2" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M19.25 21L38.5 21" stroke="white" stroke-width="2.2" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M3.5 8.75L22.75 8.75" stroke="white" stroke-width="2.2"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M29.75 8.75L38.5 8.75" stroke="white" stroke-width="2.2"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M22.75 5.25L22.75 12.25" stroke="white" stroke-width="2.2"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M22.75 29.75L22.75 36.75" stroke="white" stroke-width="2.2"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M19.25 17.5L19.25 24.5" stroke="white" stroke-width="2.2"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                            <div class="d-flex flex-column gap-18">
+                                <h5 class="heading-advantage text-capitalize fw-semibold mb-0">Drive Data-Driven
+                                    Decisions
+                                </h5>
+                                <p class="para-2-style fw-normal mb-0">Transform raw data into actionable intelligence.
+                                    Make
+                                    more informed underwriting and broking decisions with
+                                    comprehensive AI-powered insights.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position-absolute bottom-underline w-100 "></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <!-- - - - - = = = = = lets section = = = = = - - - - -->
+
+
+
+
+    <section>
+        <div class="lets_container d-flex px-4 flex-column">
+            <h2 class="lets_heading">Contact us</h2>
+            <h2 class="lets_heading_two">Let’s Talk</h2>
+            <p class="lets_paragraph">These are usually used when a text is required purely to fill a space.</p>
+        </div>
+        <div class="parent_container px-4 ">
+            <div class="form-card ">
+                <div class="row g-4 ">
+                    <div class="col-12 col-md-6">
+                        <div class="field-group">
+                            <label class="field-label">Name</label>
+                            <div class="field-wrapper">
+                                <input type="text" class="field-input" value="John Jacob" placeholder="Your name" />
+                                <span class="field-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <circle cx="12" cy="8" r="4" />
+                                        <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="field-group">
+                            <label class="field-label">Email</label>
+                            <div class="field-wrapper">
+                                <input type="email" class="field-input" value="jhon.jacob1234@gmail.com"
+                                    placeholder="Your email" />
+                                <span class="field-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <rect x="2" y="4" width="20" height="16" rx="3" />
+                                        <path d="M2 7l10 7 10-7" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="field-group">
+                            <label class="field-label">Phone</label>
+                            <div class="field-wrapper">
+                                <input type="tel" class="field-input" placeholder="|" />
+                                <span class="field-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <path
+                                            d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.5 11.5 0 0 0 3.6.57 1 1 0 0 1 1 1V17a1 1 0 0 1-1 1A17 17 0 0 1 3 6a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.5 11.5 0 0 0 .57 3.6 1 1 0 0 1-.24 1z" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="field-group">
+                            <label class="field-label">Company</label>
+                            <div class="field-wrapper">
+                                <input type="text" class="field-input" placeholder="|" />
+                                <span class="field-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" />
+                                        <path d="M3 9h18M9 21V9" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <label class="field-label">Message</label>
+                        <div class="message-wrapper">
+                            <textarea class="message-input" rows="3" placeholder="Write your message..."></textarea>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="submit-wrap">
+                            <button class="btn-submit">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- - - - - = = = = = footer = = = = = - - - - -->
+
+
+
+
+<section class="footerParent">
+    <footer>
+        <div class="footer1Child">
+            <a href="">
+                <img src="assets/images/png/footer.png" alt="">
+            </a>
+            <div class="footerLinks">
+                <div class="first link">
+                    <h3>Company</h3>
+                    <ul>
+                        <a href="">About</a>
+                        <a href="">Contact</a>
+                        <a href="">Blog</a>
+                        <a href="">Videos</a>
+                    </ul>
+                </div>
+                <div class="second link">
+                    <h3>Solutions</h3>
+                    <ul>
+                        <a href="">Client Area</a>
+                        <a href="">Knowledgebase</a>
+                        <a href="">Wholesale Brokers</a>
+                        <a href="">Commercial Insurers</a>
+                    </ul>
+                </div>
+                <div class="third link">
+                    <h3>Connect With Us</h3>
+                    <ul>
+                        <a href="">Twitter</a>
+                        <a href="">Instagram</a>
+                        <a href="">Linkedin </a>
+
+                    </ul>
+                </div>
+            </div>
+            <img class="absolute" src="assets/images/png/vector.png" alt="">
+        </div>
+        <div class="footer2Child">
+            <span class="year"></span>
+            <p>Privacy Policy | Terms of Service</p>
+        </div>
+    </footer>
+</section>
+
+
+
+    <!-- JS -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script>
+
+ 
+            $(document).ready(function () {
+                $('#heroSlides').slick({
+                    slidesToShow: 1,
+                    arrows: false,
+                    dots: true,
+                    autoplay: true,
+                    autoplaySpeed: 3000
+                });
+        });
+
+
+        const CARDS_DATA = [
+            {
+                svg: `
+              <svg width="80" height="66" viewBox="0 0 80 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M40 65.274C17.9413 65.274 0 47.3326 0 25.2808H14.8211C14.8211 39.159 26.115 50.4529 40 50.4529C53.885 50.4529 65.1789 39.159 65.1789 25.2808H80C80 47.3326 62.0587 65.274 40 65.274Z" fill="#0074FF"/>
+                <path d="M65.5724 25.5655H50.7513C50.7513 19.6439 45.9285 14.8211 40.0001 14.8211C34.0716 14.8211 29.2488 19.6439 29.2488 25.5655H14.4277C14.4277 11.4702 25.898 0 40.0001 0C54.1022 0 65.5724 11.4702 65.5724 25.5655Z" fill="#0074FF"/>
+              </svg>
+            `,
+                title: "AI-Powered Precision",
+                description:
+                    "Leveraging cutting-edge AI to eliminate manual processes and ensure accurate, swift data integration.",
+            },
+            {
+                svg: `
+              <svg width="80" height="66" viewBox="0 0 80 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M40 65.274C17.9413 65.274 0 47.3326 0 25.2808H14.8211C14.8211 39.159 26.115 50.4529 40 50.4529C53.885 50.4529 65.1789 39.159 65.1789 25.2808H80C80 47.3326 62.0587 65.274 40 65.274Z" fill="#0074FF"/>
+                <path d="M65.5724 25.5655H50.7513C50.7513 19.6439 45.9285 14.8211 40.0001 14.8211C34.0716 14.8211 29.2488 19.6439 29.2488 25.5655H14.4277C14.4277 11.4702 25.898 0 40.0001 0C54.1022 0 65.5724 11.4702 65.5724 25.5655Z" fill="#0074FF"/>
+              </svg>
+            `,
+                title: "Submission Parsing",
+                description:
+                    "Automatically extract, digitize, and structure data from complex submission documents with unparalleled accuracy, eliminating manual entry.",
+            },
+            {
+                svg: `
+              <svg width="80" height="66" viewBox="0 0 80 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M40 65.274C17.9413 65.274 0 47.3326 0 25.2808H14.8211C14.8211 39.159 26.115 50.4529 40 50.4529C53.885 50.4529 65.1789 39.159 65.1789 25.2808H80C80 47.3326 62.0587 65.274 40 65.274Z" fill="#0074FF"/>
+                <path d="M65.5724 25.5655H50.7513C50.7513 19.6439 45.9285 14.8211 40.0001 14.8211C34.0716 14.8211 29.2488 19.6439 29.2488 25.5655H14.4277C14.4277 11.4702 25.898 0 40.0001 0C54.1022 0 65.5724 11.4702 65.5724 25.5655Z" fill="#0074FF"/>
+              </svg>
+            `,
+                title: "Market Email Builder",
+                description:
+                    "Dynamically generate tailored, professional email drafts for market communication, pre-populated with key submission details and insights.",
+            },
+            {
+                svg: `
+              <svg width="80" height="66" viewBox="0 0 80 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M40 65.274C17.9413 65.274 0 47.3326 0 25.2808H14.8211C14.8211 39.159 26.115 50.4529 40 50.4529C53.885 50.4529 65.1789 39.159 65.1789 25.2808H80C80 47.3326 62.0587 65.274 40 65.274Z" fill="#0074FF"/>
+                <path d="M65.5724 25.5655H50.7513C50.7513 19.6439 45.9285 14.8211 40.0001 14.8211C34.0716 14.8211 29.2488 19.6439 29.2488 25.5655H14.4277C14.4277 11.4702 25.898 0 40.0001 0C54.1022 0 65.5724 11.4702 65.5724 25.5655Z" fill="#0074FF"/>
+              </svg>
+            `,
+                title: "Response Tracking",
+                description:
+                    "Monitor and manage market responses in real-time. Get instant notifications and keep all communication organized in one central hub.",
+            },
+            {
+                svg: `
+              <svg width="80" height="66" viewBox="0 0 80 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M40 65.274C17.9413 65.274 0 47.3326 0 25.2808H14.8211C14.8211 39.159 26.115 50.4529 40 50.4529C53.885 50.4529 65.1789 39.159 65.1789 25.2808H80C80 47.3326 62.0587 65.274 40 65.274Z" fill="#0074FF"/>
+                <path d="M65.5724 25.5655H50.7513C50.7513 19.6439 45.9285 14.8211 40.0001 14.8211C34.0716 14.8211 29.2488 19.6439 29.2488 25.5655H14.4277C14.4277 11.4702 25.898 0 40.0001 0C54.1022 0 65.5724 11.4702 65.5724 25.5655Z" fill="#0074FF"/>
+              </svg>
+            `,
+                title: "Integrations",
+                description:
+                    "Seamlessly connect Citodex with your existing agency management systems, CRM, and other critical platforms via robust APIs and pre-built connectors.",
+            },
+            {
+                svg: `
+              <svg width="80" height="66" viewBox="0 0 80 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M40 65.274C17.9413 65.274 0 47.3326 0 25.2808H14.8211C14.8211 39.159 26.115 50.4529 40 50.4529C53.885 50.4529 65.1789 39.159 65.1789 25.2808H80C80 47.3326 62.0587 65.274 40 65.274Z" fill="#0074FF"/>
+                <path d="M65.5724 25.5655H50.7513C50.7513 19.6439 45.9285 14.8211 40.0001 14.8211C34.0716 14.8211 29.2488 19.6439 29.2488 25.5655H14.4277C14.4277 11.4702 25.898 0 40.0001 0C54.1022 0 65.5724 11.4702 65.5724 25.5655Z" fill="#0074FF"/>
+              </svg>
+            `,
+                title: "Audit Trail",
+                description:
+                    "Maintain a comprehensive, immutable record of all activities, changes, and communications for enhanced transparency, compliance, and accountability.",
+            },
+        ];
+
+        let cardsContainer = document.querySelector(".cards");
+
+        CARDS_DATA.forEach((item) => {
+            let col = document.createElement("div");
+            col.className = "col-lg-4 col-md-6 col-12";
+
+            col.innerHTML = `
+            <div class="custom-card">
+              <div class="icon">
+                ${item.svg}
+              </div>
+              <h6 class="card-text">${item.title}</h6>
+              <p class="card-dis">${item.description}</p>
+            </div>
+          `;
+
+            cardsContainer.appendChild(col);
+        });
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
