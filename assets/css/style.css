@@ -650,9 +650,9 @@ main {
 
 .field-label {
     display: block;
-    font-size: 14px;
-    font-weight: 500;
-    color: #6b7280;
+    font-size: 16px;
+    font-weight: 400;
+    color: #454545;
     margin-bottom: 8px;
     letter-spacing: 0.01em;
 }
@@ -660,7 +660,9 @@ main {
 .field-wrapper {
     position: relative;
 }
-
+.lets{
+    margin-bottom: 160px;
+}
 .field-input {
     width: 100%;
     max-width: 660px;
@@ -669,16 +671,16 @@ main {
     border-radius: 0;
     padding: 10px 44px 14px 0px;
     font-family: 'Manrope', sans-serif;
-    font-size: 15px;
-    font-weight: 500;
-    color: #111827;
+    font-size: 17px;
+    font-weight: 600;
+    color: #1F1F1F;
     background: transparent;
     outline: none;
     transition: border-color 0.2s ease;
 }
 
 .field-input::placeholder {
-    color: #c4c9d4;
+    color: #1F1F1F;
     font-weight: 400;
 }
 
@@ -916,7 +918,9 @@ span {
         max-height: 354px;
         padding: 24px;
     }
-
+.lets {
+    margin-bottom: 60px;
+}
     .card-dis {
         font-size: var(--font-normal);
         line-height: 28px;
@@ -942,7 +946,9 @@ span {
         line-height: 30px;
         margin-bottom: 40px;
     }
-
+.lets {
+    margin-bottom: 40px;
+}
     .custom-card {
         padding: 24px;
     }
